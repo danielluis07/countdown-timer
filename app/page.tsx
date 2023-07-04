@@ -78,7 +78,7 @@ export default function Home() {
     const countdownInterval = setInterval(calculateCountdown, 1000);
 
     return () => clearInterval(countdownInterval);
-  }, [countdown, flipDays, flipHours, flipMinutes, flipSeconds]);
+  }, [countdown]);
 
   return (
     <main className="h-screen flex flex-col justify-between">
