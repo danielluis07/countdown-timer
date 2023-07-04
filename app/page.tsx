@@ -78,14 +78,14 @@ export default function Home() {
     const countdownInterval = setInterval(calculateCountdown, 1000);
 
     return () => clearInterval(countdownInterval);
-  }, [countdown]);
+  }, [countdown, flipDays, flipHours, flipMinutes, flipSeconds]);
 
   return (
     <main className="h-screen flex flex-col justify-between">
       <div className="h-4/6 w-full flex items-center justify-center">
         <div className="w-11/12">
           <h1 className="font-bold text-white text-xl desktop:text-2xl tracking-[.3em] w-full desktop:w-11/12 mx-auto text-center">
-            WE'RE LAUCHING SOON
+            WE&apos;RE LAUCHING SOON
           </h1>
           <div className="flex flex-row gap-x-4 desktop:gap-x-8 items-center justify-center mt-14">
             <div className="card w-[100px] h-[100px] desktop:w-[180px] desktop:h-[180px] rounded-lg relative overflow-hidden">
